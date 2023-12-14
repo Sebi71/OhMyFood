@@ -2,8 +2,4 @@
 
 @import "base/normalize", "base/typography";
 
-@import "mobil/mobil_accueil", "mobile/mobile_restaurants";
-
-@import "tablette/tablette_accueil", "tablette/tablette_restaurants";
-
-@import "desktop/desktop_accueil", "desktop/desktop_restaurants";
+@import "layout/section_accueil", "layout/section_restaurants", "layout/header", "layout/footer";
