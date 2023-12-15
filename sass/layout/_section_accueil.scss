@@ -4,9 +4,8 @@
 
 /******EXPLORER******/
 .form {
-    display: flex;
+    @include align-center;
     justify-content: center;
-    align-items: center;
     gap: 17px;
     width: 100%;
     height: 50px;
@@ -31,9 +30,8 @@
     }
 
 .reservation {
-    display: flex;
+    @include align-center;
     flex-direction: column;
-    align-items: center;
     background-color: #f6f6f6;
     padding-top: 39px;
     padding-bottom: 57px;
@@ -50,9 +48,8 @@
    }
 
    &-btn {
-        display: flex;
+        @include align-center;
         justify-content: center;
-        align-items: center;
         width: 218px;
         height: 50px;
         background: linear-gradient(193deg , $color-primary -11.44%, $color-secondary 123.93%);
@@ -66,19 +63,51 @@
 /******FONCTIONNEMENT******/
 .fonctionnement {
     padding-top: 48px;
-    padding-left: 20px;
     padding-bottom: 68px;
 
-   &-btns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
+    &-title {
+        margin: 0 0 26px 20px;
+    }
+
+    &-btns {
+        @include align-center;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 33px 0 20px;
    } 
 
-    @include title-accueil;
+   &-btn {
+        @include align-center;
+        width: 100%;
+        height: 72px;
+        background-color: #f6f6f6;
+        border-radius: 25px;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+   }
 
-    @include fonctionnement;
+    .number {
+        transform: translate(-12px);
+        background-color: $color-primary;
+        color: white;
+        border-radius: 100%;
+        width: 24px;
+        height: 24px;
+        @include align-center;
+        justify-content: center;
+        font-size: 0.88rem;
+        font-weight: 500;
+    }
+
+    i {
+        color: #7e7e7e;
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+
+    .choice {
+        margin-left: 27px;
+        font-weight: 500;
+    }
 
     #store {
         color: $color-primary;
@@ -86,3 +115,67 @@
 }
 
 /******RESTAURANT******/
+.restaurants {
+    background-color: #f6f6f6;
+    padding-top: 54px;
+    padding-bottom: 66px;
+
+    &-title {
+        margin: 0 0 26px 20px;
+    }
+
+    &-list {
+        padding: 0 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+.restaurant-lien {
+    text-decoration: none;
+        
+    .restaurant-card{
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .restaurant-card > .card-img {
+        width: 100%;
+        height: 175px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+
+    .new {
+        background-color: $color-tertiary;
+        color: $color-green;
+        padding: 7px 9px;
+        font-weight: 500;
+        position: absolute;
+        transform: translate(-90px, 10px);
+    }
+
+    .card-content {
+        display: flex;
+        justify-content: space-between;
+        color: black;
+
+        .content > h3 {
+            margin: 16px 0 5px 13px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .content > p {
+            margin: 0 0 12px 13px;
+            font-weight: 300;
+        }
+
+        i {
+            margin: 23px 25px 33px 0;
+            font-size: 1.4rem;
+            -webkit-text-stroke: 0.05rem white;
+        }
+    }
+}
