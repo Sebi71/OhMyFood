@@ -1,5 +1,7 @@
-@import "utils/variables", "utils/mixins";
+@import "utils/variables", "utils/mixins", "utils/animations";
 
 @import "base/normalize", "base/typography";
 
-@import "layout/section_accueil", "layout/section_restaurants", "layout/header", "layout/footer";
+@import "layout/section_accueil", "layout/section_restaurants", "layout/header", "layout/footer", "layout/_form_accueil";
+
+@import "components/loader", "components/heart";

@@ -4,9 +4,22 @@ footer {
     color: white;
     padding: 22px 25px;
 
+    @include desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 80px;
+        padding: 30px 25px;
+        height: 114px;
+    }
+
     .footer-logo {
         filter: invert(100%);
         width: 105px;
+
+        @include desktop {
+            width: 138px;
+        }
     }
 
     .no-puce {
@@ -16,6 +29,11 @@ footer {
         flex-direction: column;
         gap: 7px;
         margin: 16px 0 0 0;
+
+        @include desktop {
+            flex-direction: row;
+            gap: 20px;
+        }
     
         i {
             width: 20px;

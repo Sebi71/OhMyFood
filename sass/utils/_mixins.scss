@@ -3,3 +3,15 @@
     display: flex;
     align-items: center;
 }
+
+/***MEDIA-QUERY***/
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;        
+    }
+}
+
+@mixin size-desktop {
+    max-width: map-get($breakpoints, desktop);
+    margin: auto;
+}

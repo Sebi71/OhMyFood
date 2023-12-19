@@ -1,0 +1,26 @@
+/******FORM LOCATION******/
+.form {
+    @include align-center;
+    justify-content: center;
+    gap: 17px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(180deg, rgba(212, 212, 212, 1)0%, rgba(234, 234, 234, 1)10%);
+
+    form > i {
+        color: #353535;
+    }
+
+    .explorer-location {
+        background-color: transparent;
+        border: none;
+        color: #353535;
+        width: 110px;
+        font-weight: 500;
+        font-size: 1rem;
+
+        &::placeholder {
+            color: #353535;
+        } 
+    }
+}

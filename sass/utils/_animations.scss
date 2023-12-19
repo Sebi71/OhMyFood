@@ -1,0 +1,40 @@
+/******KEYFRAMES******/
+
+    /***COEUR***/
+@keyframes heart {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    
+    /***LOADER***/
+@keyframes loader {
+    0% {
+    opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+    
+@keyframes loader-ring {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} 
+    
+@keyframes loader-ring2 {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
