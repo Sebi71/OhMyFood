@@ -1,0 +1,119 @@
+            /****MENUS RESTAURANTs****/
+
+.img-head {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/******MENUS******/
+.menu-restaurant {
+    background-color:#f6f6f6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    margin-top: -60px;
+}
+
+.restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px 41px 40px 17px;
+
+    .heart-icon {
+        margin: 0px;
+    }
+}
+
+.menu {
+    margin: 0 17px 40px 17px;
+
+    .card-plat {
+        position: relative;
+        background-color: white;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 12px;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.10);
+    
+        .descripts {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+        
+            .descript {
+                margin: 5px 0 0 0;
+                font-size: 0.9rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .tarif {
+                margin: 5px 0 0 0;
+                font-size: 0.9rem;
+                font-weight: 700;
+                color: #353535;
+            }
+        }
+
+        .check-plat {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 72px;
+            width: 60px;
+            background-color: $color-tertiary;
+            @include align-center;
+            justify-content: center;
+            border-radius: 0 15px 15px 0;
+            visibility: hidden;
+
+            .check {
+                color: white;
+                font-size: 1.5rem;
+            }
+
+        }
+
+        &:hover {
+            .title-plat {
+                width: calc(100% - 100px);
+            }
+
+            .descript {
+                width: calc(100% - 100px);
+            }
+            .tarif {
+                animation: tarif-check 700ms linear both;
+            }
+
+            .check-plat {
+                animation: box-check 700ms linear both;
+                visibility: visible;
+            }
+
+            .check {
+                animation: check 600ms linear;
+
+            }
+        }
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+
+    .order {
+        width: 186px;
+        margin-bottom: 40px;
+        border: none;
+        @include gradient-btn;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,32 @@
+    /***TYPO MENUS RESTAURANTS***/
+
+.restaurant-name {
+    font-family: $font-titles;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.title-menu {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    
+    &::after {
+        display: block;
+        content: "";
+        background-color: $color-tertiary;
+        height: 3px;
+        width: 40px;
+        margin-top: 5px;
+    }
+}
+
+.title-plat {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -35,6 +35,36 @@
         transform: rotate(0);
     }
     to {
-        transform: rotate(-360deg);
+        transform: rotate(-360deg)
+    }
+}
+
+    /***CHECK***/
+@keyframes tarif-check {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-62px);
+    }
+}
+
+@keyframes box-check {
+    from {
+        transform: translateX(62px);
+        opacity: 0;
+        }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes check {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

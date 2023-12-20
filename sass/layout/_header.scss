@@ -1,9 +1,17 @@
 /******HEADER******/
 header {
-    display: flex;
+    @include align-center;
     justify-content: center;
-
+    position: relative;
     width: 100%;
+
+    .arrow-return {
+        position: absolute;
+        left: 21px;
+        text-decoration: none;
+        color: #353535;
+        font-size: 30px;
+    }
 
     .header-logo {
         width: 162px;
