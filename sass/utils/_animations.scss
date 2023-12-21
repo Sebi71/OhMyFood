@@ -39,6 +39,18 @@
     }
 }
 
+    /***CARD PLATS***/
+@keyframes card-plats {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
     /***CHECK***/
 @keyframes tarif-check {
     from {

@@ -1,7 +1,7 @@
             /****MENUS RESTAURANTs****/
 
 .img-head {
-    height: 275px;
+    height: 450px;
     width: 100%;
     object-fit: cover;
 }
@@ -9,26 +9,44 @@
 /******MENUS******/
 .menu-restaurant {
     background-color:#f6f6f6;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 40px 40px 0 0;
     position: relative;
     margin-top: -60px;
-}
 
-.restaurant {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 32px 41px 40px 17px;
+    @include desktop {
+        @include size-desktop;
+        margin-top: -30px;
+    }
 
-    .heart-icon {
-        margin: 0px;
+    .restaurant {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 32px 41px 40px 17px;
+        
+        @include desktop {
+            justify-content: center;
+            margin: 51px 0 40px 0;
+            gap: 24px;
+        }
+
+        .heart-icon {
+            margin: 0px;
+        }
     }
 }
 
 .menu {
+    
     margin: 0 17px 40px 17px;
+
+    @include desktop {
+        margin-left: 210px;
+        margin-right: 210px;
+    }
 
     .card-plat {
         position: relative;
