@@ -49,19 +49,20 @@
     }
 
     .card-plat {
-        position: relative;
+        display: flex;
+        justify-content: space-between;
         background-color: white;
         border-radius: 15px;
-        padding: 15px;
         margin-top: 12px;
         box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.10);
     
-        .descripts {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 0;
-        
+        .text-plat {
+            width: calc(100% - 30px);
+            padding: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
             .descript {
                 margin: 5px 0 0 0;
                 font-size: 0.9rem;
@@ -69,26 +70,27 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
+        }
 
-            .tarif {
-                margin: 5px 0 0 0;
-                font-size: 0.9rem;
-                font-weight: 700;
-                color: #353535;
-            }
+        .tarif {
+            margin: 5px 0 0 0;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #353535;
+            align-self: flex-end;
+            padding: 15px;
         }
 
         .check-plat {
-            position: absolute;
-            top: 0;
-            right: 0;
             height: 72px;
-            width: 60px;
+            width: 0;
             background-color: $color-tertiary;
             @include align-center;
             justify-content: center;
             border-radius: 0 15px 15px 0;
-            visibility: hidden;
+            overflow: hidden;
+            transition: all 500ms;
+            opacity: 0;
 
             .check {
                 color: white;
@@ -98,20 +100,9 @@
         }
 
         &:hover {
-            .title-plat {
-                width: calc(100% - 100px);
-            }
-
-            .descript {
-                width: calc(100% - 100px);
-            }
-            .tarif {
-                animation: tarif-check 700ms linear both;
-            }
-
             .check-plat {
-                animation: box-check 700ms linear both;
-                visibility: visible;
+                width: 68px;
+                opacity: 1;
             }
 
             .check {
