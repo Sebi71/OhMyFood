@@ -93,7 +93,7 @@
         }
 
             .number {
-                transform: translate(-12px);
+                transform: translateX(-12px);
                 background-color: $color-primary;
                 color: white;
                 border-radius: 100%;
@@ -146,7 +146,7 @@
             @include size-desktop;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-arround;
             gap: 50px 100px;
         }
 
