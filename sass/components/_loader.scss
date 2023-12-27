@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    animation: loader 1s 2s both; 
+    animation: loader 1s 2s forwards; 
 
     .item-loader {
         position: absolute;

@@ -11,8 +11,7 @@
         
             .full {
                 position: absolute;
-                opacity: 0;
-                transition: all 0.5s;
+                transition: all 500ms;
                 transform: scale(0);
                 
             }
@@ -25,13 +24,12 @@
                 
                 .full {
                     background-size: cover;
-                    opacity: 1;
                     background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;
                     background-image: linear-gradient(180deg, $color-primary 0%, $color-secondary 50%);
                     transform: scale(1);
-                    animation: heart 2s 10ms both;
+                    animation: heart 3s 100ms;
                 }
             }       
         } 
