@@ -65,7 +65,7 @@
         @include align-center;
         flex-direction: column;
         gap: 25px;
-        margin: 0 33px 0 20px;
+        margin: 0 20px 0 20px;
 
         @include desktop {
             flex-direction: row;

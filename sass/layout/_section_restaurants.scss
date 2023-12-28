@@ -1,9 +1,13 @@
             /****MENUS RESTAURANTs****/
 
 .img-head {
-    height: 450px;
+    height: 275px;
     width: 100%;
     object-fit: cover;
+
+    @include desktop {
+        height: 450px;
+    }
 }
 
 /******MENUS******/
